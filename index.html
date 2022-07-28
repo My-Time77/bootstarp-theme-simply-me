@@ -12,15 +12,58 @@
     <link
     rel="stylesheet"
     href="style.css"
-  />
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   </head>
-  <body>
+
+  <style>
+    body{
+      font-family: monospace;
+      color: #fff;
+    }
+    .heading{
+      text-align: center;
+      font-size: 45px;
+      border-bottom: 2px dotted #fff;
+    }
+    .container{
+      background-color: #696868;
+    }
+    .btn-info{
+      width: 50%;
+      letter-spacing: 2px;
+      background: transparent;
+      transition: all 0.5s ease-in-out;
+    }
+    .btn-info:hover{
+      transform: scale(1.05);
+    }
+    .icn{
+      font-family: monospace;
+      font-size: 17px;
+    }
+    hr{
+      width: 80%;
+    }
+    ul li a{
+      color: #fff;
+      float: left;
+      font-family: monospace;
+      font-size: 22px;
+      margin-left: 23px;
+      margin-right: 10px;
+    }
+    ul li a:hover{
+      color: #999;
+    }
+    </style>
+
     <!-- Navbar -->
     <nav class="navbar navbar-default">
       <div class="container">
@@ -38,7 +81,7 @@
           <a class="navbar-brand" href="#">LOGO</a>
         </div>
         <div class="row">
-          <div>class= "col-sm-4" 
+          <div> class= "col-sm-4" 
           <a href="#" class="btn btn-default btn-lg">
             <span class="glyphicon glyphicon-search"></span> Search
           </a>
@@ -82,8 +125,8 @@
           <h3>PHOTOGRAPHY</h3>
           <img
             src="/assets/img/nightskyline.jpg"
-            class="img-responsive margin"
-            style="width: 90%"
+            class="img-responsive "
+            style="width: 100%"
             alt="Image"
           />
           <p>
@@ -115,17 +158,91 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-    </div>
-
-    
-
-    <!-- Third Container (Grid) -->
-    <div class="container-fluid bg-3 text-center col-sm-12">
-      <h3 class="margin">CONTACT</h3>
-      <br />
+          </p> 
         </div>
+      <br><br>
+
+    <div class="row">  
+      <div class="col-sm-2">
+      <h2>Column 1</h2>
+      <img src="./assets/img/thischangeeverything.jpg" alt="thischangeeverything" class="img-responsive" />
+      <P>Standard Image</P>
+    </div>
+  </div>
+
+    <div class="row">  
+      <div class="col-sm-2">
+      <h2>Column 2</h2>
+      <img src="./assets/img/thischangeeverything.jpg" alt="thischangeeverything" class="img-responsive img-rounded" />
+      <P>Image with Rounded Corners</P>
+    </div>
+  </div>
+
+    <div class="row"> 
+      <div class="col-sm-2">
+      <h2>Column 3</h2>
+      <img src="./assets/img/thischangeeverything.jpg" alt="thischangeeverything" class="img-responsive img-circle" />
+      <P>Image in a circle</P>
+    </div>
+  </div>
+
+    <div class="row"> 
+      <div class="col-sm-2">
+      <h2>Column 4</h2>
+      <img src="./assets/img/thischangeeverything.jpg" alt="thischangeeverything" class="img-responsive img-thumbnail" />
+      <P>Thumbnail Image</P>
+    </div>
+  </div>
+    
+    <!-- Third Container (Grid) -->
+      <div class="container-fluid bg-3 text-center col-sm-12"
+  <body>
+        <br><br>
+        <div class="container">
+            <h2 class="heading">Contact Us</h2>
+            <h2 style="text-align: center;">What do you need help with!</h2>
+            <p style="text-align: center;">Creating Somethings for Fun or Business we got You!!</p>
+        <br><br>   
+        <div class="row">
+        <div class="col-md-6">
+      <form>
+        <input type="Text" name="text" required= "" placeholder="Your Name"  class="form-control"> 
+        <br>
+        <input type="Email" name="Email" required= "" placeholder="Your Email"  class="form-control"> 
+        <br>
+        <input type="Text" name="text" required= "" placeholder="your Name"  class="form-control"> 
+        <br>
+        <textarea rows="6" placeholder="Message" required="" class="form-control"></textarea>
+        <br>
+      <center>
+        <button class="btn btn-info">Submit</button>
+      </center>
+        <br><br><br><br>
+      </form>
       </div>
+      </div>      
+     </div>
+  </div>
+
+    <!--Fourth Container (Address & Media)-->
+        <div class="col-md-1">
+        <div class="col-md-5">
+        <br>
+        <p class="icn"><i class="fa fa-map-marker"></i> &nbsp;&nbsp; 19 Main, Street New York, United States </p>
+        <p class="icn"><i class="fa fa-phone"></i> &nbsp;&nbsp; 7043567894 </p>
+        <p class="icn"><i class="fa fa-envelope"></i> &nbsp;&nbsp; gldros23@gmail.com </p>
+      <hr>
+        <div class="media">
+        <ul class="list-unstyled">
+            <li><a href="#"></a><i class="fab fa-facebook-f"></i>/li>
+            <li><a href="#"> <i class="fab fa-twitter"> </i></a> </li>
+            <li><a href="#"> <i class="fab fa-instagram"> </i></a> </li>
+            <li><a href="#"> <i class="fab fa-google-plus-g"> </i></a> </li>
+            <li><a href="#"> <i class="fab fa-youtube"> </i></a> </li> 
+        </ul>
+          </div>
+        </div>
+       </div>
     </div>
 
     <!-- Footer -->
